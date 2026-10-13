@@ -1,0 +1,34 @@
+{
+  "name": "tea-protocol",
+  "version": "1.0.0",
+  "description": "Traffic & Protocol Engineering Anything: Autonomous network stream deconstruction, schema inference, and typed SDK synthesis engine.",
+  "main": "dist/cli.js",
+  "bin": {
+    "tea": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "node --test dist/tests/*.test.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "reverse-engineering",
+    "protocol-engineering",
+    "api-generator",
+    "har-analyzer",
+    "sdk-synthesis",
+    "mcp-server",
+    "clean-room"
+  ],
+  "author": "Rs179988",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.3"
+  }
+}
